@@ -8,4 +8,5 @@ langchain-community
 langchain-core
 numpy
 opencv-python-headless
+langchain-text-splitters
 openai

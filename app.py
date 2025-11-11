@@ -4,7 +4,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from supabase import create_client, Client
 from openai import OpenAI # OpenAI 라이브러리 임포트
-from langchain.text_splitter import RecursiveCharacterTextSplitter # 텍스트 분할을 위해 추가
+from langchain_text_splitters import RecursiveCharacterTextSplitter # 텍스트 분할을 위해 추가
 import time # API 호출 간 지연을 위해 추가
 
 try:

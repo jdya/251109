@@ -218,6 +218,20 @@ def get_saved_files_from_supabase():
             return []
     return []
 
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    st.subheader("비밀번호를 입력해주세요.")
+    password = st.text_input("", type="password", key="password_input")
+    if st.button("로그인", key="login_button"):
+        if password == st.secrets.get("APP_PASSWORD"):
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("비밀번호가 틀렸습니다.")
+    st.stop()
+
 # --- Streamlit UI --- 
 
 # 세션 상태에 챗봇 모드 및 메시지 초기화

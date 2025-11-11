@@ -1,0 +1,9 @@
+deepseek
+streamlit
+requests
+PyPDF2
+supabase
+langchain
+numpy
+opencv-python-headless
+openai

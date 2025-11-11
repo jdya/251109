@@ -4,6 +4,8 @@ requests
 PyPDF2
 supabase
 langchain
+langchain-community
+langchain-core
 numpy
 opencv-python-headless
 openai
